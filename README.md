@@ -21,11 +21,11 @@ This repository contains python scripts/codes solving the 3 different given prob
 3. The list of characters will then be sorted alphabetically by the .sort function
 4. It now then prints the result, the word's letters being arranged alphabetically.
 
-<pre><code class="language-python">p = input("Enter a word: ") #Prompts the user to type in a word, stored in variable p as a string
+<pre>p = input("Enter a word: ") #Prompts the user to type in a word, stored in variable p as a string
 alphabet_soup = list(p) #String (p) will be converted into a list of characters (e.g. hello - will be listed letter per letter; h, e, l, l, o)
 alphabet_soup.sort() #The list of characters will be sorted alphabetically, then stored in the variable alphabet_soup
 
-print(alphabet_soup) #This prints the result, stored in the alphabet_soup variable, each character arranged alphabetically </code> </pre>
+print(alphabet_soup) #This prints the result, stored in the alphabet_soup variable, each character arranged alphabetically </pre>
 
 ---
 
@@ -42,11 +42,11 @@ print(alphabet_soup) #This prints the result, stored in the alphabet_soup variab
 7. If the word does not match any of the words in the dictionary, then it is left as it is.
 8. The sentence will now be in a new single string, with specific words included in the dictionary replaced as emoticons.
 
-<pre>def emotify(sentence):
-  emoticons_dict = { "smile": ":)","Smile": ":)", "grin": ":D","Grin": ":D","sad": ":((", "Sad": ":((", "mad": ">:(", "Mad": ">:("}
+<pre>def emotify(sentence): #Code starts with an own-made function, accepting the string (sentence) as its input
+  emoticons_dict = { "smile": ":)","Smile": ":)", "grin": ":D","Grin": ":D","sad": ":((", "Sad": ":((", "mad": ">:(", "Mad": ">:("} #Dictionary emotions_dict contains emotions (serving as keys) corresponding with their emoticons (as the pair values)
   
-  words_list = sentence.split()
-  result_list = []
+  words_list = sentence.split() #The string (sentence) is split into a list of words
+  result_list = [] #The resulting list of words is then stored in this list
   
   for word in words_list:
     if word in emoticons_dict:
