@@ -21,6 +21,12 @@ This repository contains python scripts/codes solving the 3 different given prob
 3. The list of characters will then be sorted alphabetically by the .sort function
 4. It now then prints the result, the word's letters being arranged alphabetically.
 
+<pre><code class="language-python">p = input("Enter a word: ") #Prompts the user to type in a word, stored in variable p as a string
+alphabet_soup = list(p) #String (p) will be converted into a list of characters (e.g. hello - will be listed letter per letter; h, e, l, l, o)
+alphabet_soup.sort() #The list of characters will be sorted alphabetically, then stored in the variable alphabet_soup
+
+print(alphabet_soup) #This prints the result, stored in the alphabet_soup variable, each character arranged alphabetically </code> </pre>
+
 ---
 
 ## 2. Emoticon Problem
@@ -36,6 +42,24 @@ This repository contains python scripts/codes solving the 3 different given prob
 7. If the word does not match any of the words in the dictionary, then it is left as it is.
 8. The sentence will now be in a new single string, with specific words included in the dictionary replaced as emoticons.
 
+<pre>def emotify(sentence):
+  emoticons_dict = { "smile": ":)","Smile": ":)", "grin": ":D","Grin": ":D","sad": ":((", "Sad": ":((", "mad": ">:(", "Mad": ">:("}
+  
+  words_list = sentence.split()
+  result_list = []
+  
+  for word in words_list:
+    if word in emoticons_dict:
+      result_list.append(emoticons_dict[word])
+    else:
+      result_list.append(word)
+      
+  return " ".join(result_list)
+    
+print(emotify("I am so Mad"))
+print(emotify("Make me Grin"))
+print(emotify("I love to smile"))
+print(emotify("It's okay to be sad"))</pre>
 ---
 
 ## 3. Unpacking List Problem
@@ -47,6 +71,10 @@ This repository contains python scripts/codes solving the 3 different given prob
 3. Printing the middle elements would then involve incorporating indices 1 to 5, denoted as list[1:5] to print the 2nd element (located at index 1) to the 5th element (located at index 4).
 4. In printing the last element, we then indicate it as the element located at index 5.
 
+<pre>list = [1, 2, 3, 4, 5, 6]
+print("first: " , list[0])
+print("middle: ", list[1:5])
+print("last: ", list[5])</pre>
 ---
 
 ## How to View:
