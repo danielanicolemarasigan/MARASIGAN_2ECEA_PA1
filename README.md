@@ -56,10 +56,10 @@ print(alphabet_soup) #This prints the result, stored in the alphabet_soup variab
       
   return " ".join(result_list) #The result is specified and returned/stored in the result_list
     
-print(emotify("I am so Mad"))
-print(emotify("Make me Grin"))
-print(emotify("I love to smile"))
-print(emotify("It's okay to be sad"))</pre>
+print(emotify("I am so Mad")) #for loop goes through each word, then detects the word "Mad" match one of the dictionary keys, thus replacing it with " >:( "
+print(emotify("Make me Grin")) #for loop goes through each word, then detects the word "Grin" match one of the dictionary keys, thus replacing it with " :D "
+print(emotify("I love to smile")) #for loop goes through each word, then detects the word "smile" match one of the dictionary keys, thus replacing it with " :) "
+print(emotify("It's okay to be sad")) #for loop goes through each word, then detects the word "sad" match one of the dictionary keys, thus replacing it with " :(( "</pre>
 ---
 
 ## 3. Unpacking List Problem
@@ -71,10 +71,10 @@ print(emotify("It's okay to be sad"))</pre>
 3. Printing the middle elements would then involve incorporating indices 1 to 5, denoted as list[1:5] to print the 2nd element (located at index 1) to the 5th element (located at index 4).
 4. In printing the last element, we then indicate it as the element located at index 5.
 
-<pre>list = [1, 2, 3, 4, 5, 6]
-print("first: " , list[0])
-print("middle: ", list[1:5])
-print("last: ", list[5])</pre>
+<pre>list = [1, 2, 3, 4, 5, 6] #A list is created, containing elements 1, 2, 3, 4, 5, 6
+print("first: " , list[0]) #This syntax prints the first element of the list located at index 0
+print("middle: ", list[1:5]) #This syntax prints the middle elements which are located at indices 1-5, excluding index 5 since this is the terminal value of the range
+print("last: ", list[5]) #This syntax prints the last element of the list located at index 5 </pre>
 ---
 
 ## How to View:
