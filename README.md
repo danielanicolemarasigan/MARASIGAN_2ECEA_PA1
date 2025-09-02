@@ -48,13 +48,13 @@ print(alphabet_soup) #This prints the result, stored in the alphabet_soup variab
   words_list = sentence.split() #The string (sentence) is split into a list of words
   result_list = [] #The resulting list of words is then stored in this list
   
-  for word in words_list:
+  for word in words_list: #For loop: loops each word to check for matches in the words placed in the dictionary
     if word in emoticons_dict:
-      result_list.append(emoticons_dict[word])
+      result_list.append(emoticons_dict[word]) #If there is any found matches in the dictionary's keys (emotions), it's replaced with the corresponding value (emoticon)
     else:
-      result_list.append(word)
+      result_list.append(word) #If there is none, the word is printed as is
       
-  return " ".join(result_list)
+  return " ".join(result_list) #The result is specified and returned/stored in the result_list
     
 print(emotify("I am so Mad"))
 print(emotify("Make me Grin"))
